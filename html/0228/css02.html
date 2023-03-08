@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 사용하기</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        p {
+            font-size: large;
+            /* !important 사용시 해당 속성은 변경되지 않음 */
+            font-style: italic !important;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        h1 {
+            color: mediumaquamarine;
+            font-weight: 400;
+            text-align: end;
+        }
+
+        #blue-text {
+            font-size: 24px;
+            color: blue;
+        }
+
+        .red-text {
+            color: red;
+            font-style: italic;
+        }
+
+        .bg-yellow {
+            background-color: yellow;
+            border: 1px solid black;
+            margin: 5px;
+        }
+
+        #div01 {
+            margin: 20px;
+            border: 1px solid black;
+        }
+
+        #div01 > h4 {
+            color: deepskyblue;
+            font-size: 24px;
+            font-weight: 400;
+        } 
+
+        #div01 h4 {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <img src="./001.jpg" alt="">
+    <br><hr><br>
+
+    <div>
+        <h1>태그 선택자</h1>
+        <p>국회는 법률에 저촉되지 아니하는 범위안에서 의사와 내부규율에 관한 규칙을 제정할 수 있다.</p> 
+        <p>대통령은 국민의 보통·평등·직접·비밀선거에 의하여 선출한다.</p>
+        <p>모든 국민은 언론·출판의 자유와 집회·결사의 자유를 가진다.</p>
+    </div>
+
+    <br><hr><br>
+
+    <div style="margin: 10px;">
+        <h3>id 선택자 사용하기</h3>
+
+        <h4>기본 모양 사용</h4>
+        <h4 id="blue-text">id 선택자로 모양 변경</h4>
+        <h4>기본 모양 사용</h4>
+
+        <br><br>
+
+        <h3>class 선택자 사용하기</h3>
+        <p>변경하지 않은 p 태그</p>
+        <p class="red-text">class 선택자로 변경한 p 태그</p>
+        <h4 class="red-text">class 선택자로 변경한 h4 태그</h4>
+        <h5 class="red-text bg-yellow">class 선택자로 변경한 h5 태그</h5>
+    </div>
+
+    <br><hr><br>
+
+    <div>
+        <h3>자식 선택자, 자손 선택자</h3>
+        <div id="div01">
+            <h4>자식 선택자로 선택되는 태그</h4>
+            <div>
+                <h4>자식 선택자로는 선택되지 않는 태그</h4>
+                <h4>
+                    <ul>
+                        <li>메뉴 1</li>
+                        <li>메뉴 2</li>
+                        <li>메뉴 3</li>
+                    </ul>
+                </h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

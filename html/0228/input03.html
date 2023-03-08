@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input 태그 사용하기</title>
+</head>
+<body>
+    <div>
+        <!-- 시작 태그와 끝 태그 사이에 문자가 있을 경우 기본값으로 사용됨 -->
+        <label for="">메모 : </label>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+    
+    </div>
+
+    <br><hr><br>
+
+    <div>
+        <select name="" id="" size="4" multiple>
+            <option value="사과">사과</option>
+            <option value="바나나">바나나</option>
+            <option value="오렌지">오렌지</option>
+            <option value="배">배</option>
+            <option value="딸기">딸기</option>
+            <option value="수박">수박</option>
+        </select>
+    </div>
+
+    <br><hr><br>
+
+    <div>
+        <input type="text" list="data-list">
+        <datalist id="data-list">
+            <option value="사과">사과</option>
+            <option value="바나나">바나나</option>
+            <option value="오렌지">오렌지</option>
+            <option value="배">배</option>
+            <option value="딸기">딸기</option>
+            <option value="수박">수박</option>
+        </datalist>
+    </div>
+</body>    
+</html>
